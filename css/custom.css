@@ -1,0 +1,36 @@
+
+
+
+.navbar .sandwich-nav b a {
+
+  color: #3ca65e;
+  font-size: 18px;
+}
+
+.shock-text {
+
+  font-size: 60px !important;
+}
+
+.full-media-content .custom-sides {
+
+  padding: 36px !important;
+}
+
+.full-media-content .inner-content {
+
+  background: #000000 !important;
+}
+
+.sayHello a {
+
+  color: #3ca65e !important;
+}
+
+@media screen and (max-width: 500px) {
+
+  .shock-text {
+
+    font-size: 32px !important;
+  }
+}
