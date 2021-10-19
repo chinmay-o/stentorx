@@ -2,6 +2,6 @@
 
 setInterval(function(){
 
-  $(".works").load(location.href + " .works");
+  $(".reVideo").load(location.href + " .reVideo");
   console.log("Refreshing");
 }, 3000);
