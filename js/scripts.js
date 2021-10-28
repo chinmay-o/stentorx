@@ -13,8 +13,8 @@
 			var st = $(this).scrollTop();
 			divs.css({ 'opacity' : (1 - st/400) });
 		});
-		
-		
+
+
 		// PARALLAX LAYERS
 		$('#parallax').parallax({
 			invertX: true,
@@ -24,16 +24,16 @@
 		});
 
 
-		
+
 		// TYPEWRITER
 		$("#typewriter").typewriter({
 			prefix : "",
 			text : ["Please wait", "Still loading", "Almost done"],
 			typeDelay : 100,
-			waitingTime : 1500,
+			waitingTime : 2000,
 			blinkSpeed : 800
 		});
-		
+
 		// NAV LINK HOVER AUDIO
 		$(".navigation-menu a")
 			.each(function(i) {
@@ -53,19 +53,19 @@
 			document.getElementById("sandwich-btn").addEventListener('click', function(e) {
 			document.getElementById("link").play();
 	  	});
-		
+
 
 		// PAGE TRANSITION
 		$('.navigation-menu ul li a').on('click', function(e) {
 		$('.transition-overlay').toggleClass("open");
 		});
 		$('.navigation-menu ul li a').on('click', function(e) {
-			e.preventDefault();                  
-			var goTo = this.getAttribute("href"); 
+			e.preventDefault();
+			var goTo = this.getAttribute("href");
 			setTimeout(function(){
 				window.location = goTo;
-			},1000);       
-		});	
+			},1000);
+		});
 
 		// HIDE NAVBAR
 		$(window).scroll(function () {
@@ -93,13 +93,13 @@
 			}
 			$(this).toggleClass("open");
 		});
-		
+
 		// DOTS FILTER
 		$('.dots-menu').on('click', function(e) {
     		$(this).toggleClass("active");
     		$('.works-filter').toggleClass("active");
 		});
-		
+
 		// SMOOTH SCROLL
 		$('.case-details .case-navbar ul li a').bind('click', function(event) {
         var $anchor = $(this);
@@ -108,12 +108,12 @@
         }, 1000, 'easeInOutExpo');
         event.preventDefault();
     });
-			
-	});
-	// END JQUERY		
 
-	
-	
+	});
+	// END JQUERY
+
+
+
 	// PRELOADER
 	var width = 100,
 		perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
@@ -153,7 +153,7 @@
 		}
 	});
 
-	// WOW ANIMATION 
+	// WOW ANIMATION
 	var wow = new WOW(
 	{
 		animateClass: 'animated',
@@ -195,11 +195,11 @@
 		}
 	});
 	return false;
-	}); 
+	});
 
-	// COUNTER 
+	// COUNTER
 	if (!document.getElementById("counter")) {
-	} 
+	}
 	else {
 
 	var lastWasLower = false;
@@ -219,7 +219,7 @@
 			} else {
 		lastWasLower = false;
 		}
-		});		
+		});
 	}
 
 	// SLIDER
@@ -265,17 +265,17 @@
         }
       }
 		});
-	
+
 	if ($(".gallery-top")[0]){
 		galleryTop.controller.control = galleryThumbs;
 		galleryThumbs.controller.control = galleryTop;
-		} 
+		}
 	else {
 
 		}
-	
 
-	// MAGNET EFFECT 
+
+	// MAGNET EFFECT
 	document.addEventListener("mousemove", function(e){
 	  magnetize('.circle', e);
 	});
@@ -302,15 +302,15 @@
 		else {
 		  TweenMax.to(item, 0.45, {y: 0, x: 0, scale:1});
 		  item.classList.remove('magnet');
-		}     
+		}
 	   });
 	}
 
 	function calculateDistance(elem, mouseX, mouseY) {
 	  return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offsetLeft+(elem.clientWidth/2)), 2) + Math.pow(mouseY - (elem.offsetTop+(elem.clientHeight/2)), 2)));
 	}
-	
-	
+
+
 	// PARTICLES JS
 	particlesJS('particles-js',
 

@@ -573,7 +573,7 @@ a:hover {
 .page-loaded .preloader {
   /* display: none; */
   left: 100%;
-  transition-delay: 0.5s;
+  transition-delay: 10s;
 }
 .page-loaded .preloader .inner {
   left: 100%;
