@@ -3,8 +3,8 @@
         var settings = $.extend({
             prefix: "Prefix",
             text: ["Hey", "This is cool, isn't it?"],
-            typeDelay: 200,
-            waitingTime: 1000,
+            typeDelay: 50,
+            waitingTime: 25,
             callback: null,
             blinkSpeed: 1000
         }, options);
