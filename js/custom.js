@@ -26,8 +26,8 @@
 //
 // document.getElementById("gdrivePull").innerHTML += '<video id="reVideo1" class="thumb" src="'+ gif[1] +'" width="480" height="360" autoplay loop muted></video>';
 
-setInterval(function() {
-
-  console.log(seconds);
-  $( "#works" ).load(window.location.href + " #works" );
-}, 10000);
+// setInterval(function() {
+//
+//   console.log(seconds);
+//   $( "#works" ).load(window.location.href + " #works" );
+// }, 10000);
