@@ -1,6 +1,4 @@
 
-
-
 .navbar .sandwich-nav b a {
 
   color: #3ca65e;
@@ -46,9 +44,19 @@
 /* This one works! */
 
 *::-webkit-media-controls-start-playback-button {
-  
+
   display: none!important;
   -webkit-appearance: none;
+}
+
+.apply-career {
+
+  margin-bottom: 100px;
+}
+
+.loadingResume {
+
+  display: none;
 }
 
 @media screen and (max-width: 500px) {
